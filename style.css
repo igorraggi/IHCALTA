@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    height: 170vh;
+    
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    z-index: 1000;
+    
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    background-color: #ebb134;
+    z-index: 1000;
+}
+
+header.rolagem{
+   background-color: #b4a1b4;
+   padding: 15px 4%;
+   z-index: 1000;
+}
+
+header.rolagem a, header.rolagem i {
+    color: #ffae81;
+    z-index: 1000;
+}
+
+header i {
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+    z-index: 1000;
+    
+    
+}
+
+header ul li a {
+    color: #fff;
+
+    text-decoration: none;
+    z-index: 1000;
+}
+
+
+
+
+
+.banner span {
+    color: #ffae81;
+}
+
+.btn-code i {
+    color: black;
+    
+}
+
+.btn-code button {
+    background-color: #ebb134;   
+    padding: 5px;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+    width: 120;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    background-color: #349beb;
+    justify-content: space-between;
+}
+
+.home h1 {
+    margin-left: 150px;
+}
+
+.home p {
+    margin-left: 150px;
+}
+
+.home img {
+    height: 400px;
+    margin: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+
+
+
+.banner2 {
+    background-image: url(/imgs/Banner\ Paisagem\ Sonho\ Da\ Casa\ Própria\ Imobiliária\ Moderno\ Roxo\ E\ Branco.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.abaixo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.card1 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.card3 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+    margin-right: 50px;
+
+}
+.container-slider {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    min-height: 90vh;
+    gap: 1rem;
+    background-color: #349beb;
+    
+
+}
+
+.container-images {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 700px;
+   height: 250px;
+
+}
+
+.slider {
+   position: absolute;
+   width: 100%;
+   border-radius: 10px;
+   opacity: 0;
+   transition: opacity .2s;
+   
+   
+
+}
+
+.on {
+    opacity: 1;
+}
+
+
+#prev-button,#next-button {
+   width: 80vh;
+   height: 30px;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+
+}
+
+#prev-button img ,#next-button img {
+  width: 100%;
+  height: 100%;
+
+} 
+
+.container-images img {
+    height: 480px;
+    width: 100vh;
+
+}
+
+.abaixo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card4 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.card5 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.card6 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+    margin-right: 50px;
+
+}
+
+.abaixo3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card7 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.card8 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.card9 {
+    height: 300px;
+    width: 300px;
+    background-color: #ff8f8f;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+    margin-right: 50px;
+
+}
+
+footer {
+    
+    background-color: #0B121E;
+    height: 70px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+    background-position: bottom;
+    padding: 3px;
+    bottom: 0;
+    left: 0;
+    color: lightgrey;
+ 
+ 
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+.card img {
+    height: 270px;
+    width: 280px;
+}
+
+.card1 img {
+    height: 270px;
+    width: 280px;
+}
+
+.card2 img {
+    height: 270px;
+    width: 280px;
+}
+
+.card3 img {
+    height: 270px;
+    width: 280px;
+}
+
+.card4 img {
+    height: 150px;
+    width: 280px;
+}
+
+.card5 img {
+    height: 150px;
+    width: 280px;
+}
+
+.card6 img {
+    height: 150px;
+    width: 280px;
+}
+
+.abaixo2 {
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.card6 {
+    height: 340px;
+}
+
+.card5 {
+    height: 340px;
+}
+
+.card4 {
+    height: 340px;
+}
+
+.card4 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ongs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.feedbacks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
